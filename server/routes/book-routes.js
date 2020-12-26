@@ -20,7 +20,7 @@ router
 
     Books
       .create({
-        text: req.body.text
+        ...req.body
       })
       .then(data => {
         res.json({ success: true, data });
@@ -30,8 +30,6 @@ router
       });
   });
 
-
-// /api/todo/:id
 router
   .route('/:id')
   .delete((req, res) => {

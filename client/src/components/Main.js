@@ -52,6 +52,18 @@ const Main = () => {
         setDisplay(!display)
     };
 
+    const handleSave = () => {
+        API.save({
+            title: books.items?.volumeInfo.title,
+            authors: books.items?.volumeInfo.authors,
+            description: books.items?.volumeInfo.description,
+            image: books.items?.volumeInfo.imageLinks.smallThumbnail,
+            link: books.items?.volumeInfo.infoLink
+        })
+        .then((res) => console.log(res))
+        .catch((err) => console.log(err))
+    }
+
     const handleKeypress = e => {
         if (e.keyCode === 13) {
             handleSubmit(e);
@@ -113,6 +125,7 @@ const Main = () => {
                                                 id="save-button"
                                                 variant="light"
                                                 type="submit"
+                                                onClick={handleSave}
                                             >Save
             </Button>
                                         </Card.Text>
