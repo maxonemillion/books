@@ -7,7 +7,7 @@
 
 
 ### RUN:
-[Here]() is the link to the deployed app.  [Here](https://github.com/maxonemillion/books "Link to github repository") is the github repository for this project.
+[Here]() is the link to the deployed app.  
 
 ### SCREENSHOT:
 
