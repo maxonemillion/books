@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Navbar, Form, Button } from "react-bootstrap";
-import API from "../../utils/API";
 import "./Header.css"
 
 const Header = () => {
