@@ -1,13 +1,14 @@
 # BOOKS
 
 ### PURPOSE:
+The purpose of this app was to create a React-based Google Books Search app using React components, helper/util functions, React lifecycle methods to query and display books based on user searches. 
 
 
 ### TECHNOLOGIES:
-
+MongoDB, Express, React, Node
 
 ### RUN:
-[Here]() is the link to the deployed app.  
+[Here](https://fast-crag-66495.herokuapp.com/) is the link to the deployed app.  
 
 ### SCREENSHOT:
 
