@@ -1,11 +1,17 @@
 import './App.css';
-import Main from "../src/components/Main"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Main from "./components/Main/Main";
+import Saved from "./components/Saved/Saved";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
-    <div className="app">
-      <Main />
-    </div>
+    <Router>
+      <Switch>   
+      <Route exact path="/" component={Main} />
+      <Route exact path="/Saved" component={Saved} />
+      </Switch>
+    </Router>
   );
 }
 

@@ -1,0 +1,8 @@
+.btn-primary {
+    font-family: monospace;
+    background-color: transparent!important;
+    border-color: white!important;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}

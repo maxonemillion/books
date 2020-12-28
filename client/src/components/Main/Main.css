@@ -89,12 +89,12 @@ overflow: hidden;
     list-style-type: none;
   }
   
-  li {
+  #boonInfo {
     list-style-type: none;
     display: none;
   }
   
-  li.display {
+  #bookInfo.display {
     display: block;
     color: white;
   }

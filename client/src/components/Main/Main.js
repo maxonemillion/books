@@ -1,7 +1,8 @@
 import { Form, Button, Card, Container, Row, Col } from "react-bootstrap";
 import React, { useState } from "react";
+import Header from "../Header/Header";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import API from "../utils/API";
+import API from "../../utils/API";
 import "./Main.css"
 
 
@@ -76,6 +77,7 @@ const Main = () => {
 
     return (
         <div>
+            <Header />
             <Form.Group className="form">
                 <Form.Control
                     autoComplete="off"
@@ -112,7 +114,7 @@ const Main = () => {
                                         <br></br>
                                         <Card.Title className="title">{bookData.volumeInfo.title}</Card.Title>
                                         <Card.Text className="list">
-                                            <li className={display ? "display" : null}>
+                                            <li id="bookInfo" className={display ? "display" : null}>
                                                 {bookData.volumeInfo.authors}
                                                 <br></br>
                                                 <br></br>
