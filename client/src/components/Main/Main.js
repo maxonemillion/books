@@ -61,7 +61,7 @@ const Main = () => {
             title: books.items[index]?.volumeInfo.title,
             authors: books.items[index]?.volumeInfo.authors,
             description: books.items[index]?.volumeInfo.description,
-            image: books.items[index]?.volumeInfo.imageLinks.smallThumbnail,
+            image: books.items[index]?.volumeInfo.imageLinks.thumbnail,
             link: books.items[index]?.volumeInfo.infoLink
         })
         .then((res) => console.log(res))
@@ -105,7 +105,7 @@ const Main = () => {
                         <Row>
                             <Col>
                                 <Card style={{ width: '18rem', border: "none" }} className="card1">
-                                    <img className={display ? "display" : null} id="image" src={bookData.volumeInfo.imageLinks.smallThumbnail} alt="poster" />
+                                    <img className={display ? "display" : null} id="image" src={bookData.volumeInfo.imageLinks.thumbnail} alt="poster" />
                                 </Card>
                             </Col>
                             <Col>
