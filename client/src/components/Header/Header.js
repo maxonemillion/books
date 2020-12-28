@@ -4,15 +4,6 @@ import API from "../../utils/API";
 import "./Header.css"
 
 const Header = () => {
-    const [books, setBooks] = useState({});
-
-    useEffect(() => {
-        API.get()
-            .then(res => {
-                setBooks(res.data)
-                console.log(res.data)
-        })
-    }, [])
 
     return (
         <div>
