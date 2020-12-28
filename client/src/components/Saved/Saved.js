@@ -28,7 +28,7 @@ const SavedBooks = () => {
 
         <div>
             <Return />
-            <h1 className="myBooks">My Books
+            <h1 className="myBooks">My Books</h1>
                 <Container>
                     {books.data?.map((bookData, index) => {
                         return (
@@ -40,7 +40,7 @@ const SavedBooks = () => {
                                 </Col>
                                 <Col>
                                     <Card style={{ width: '18rem', border: "none" }} className="card">
-                                        <Card.Body className="main-card">
+                                        <Card.Body className="main-cards">
                                             <br></br>
                                             <Card.Title className="title">{bookData.title}</Card.Title>
                                             <Card.Text className="list">
@@ -72,7 +72,6 @@ const SavedBooks = () => {
                         )
                     })}
                     </Container>
-                    </h1>
         </div>
 
     )
