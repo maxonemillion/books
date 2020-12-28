@@ -16,13 +16,11 @@ const Header = () => {
 
     return (
         <div>
-            {Object.keys(books).length ?
                 <Navbar className="justify-content-between" id="savedBtn">
                     <Form inline>
                         <Button type="submit" href="/Saved">Saved</Button>
                     </Form>
                 </Navbar>
-                : ""}
         </div>
     )
 }
