@@ -52,13 +52,16 @@ const Main = () => {
         setDisplay(!display)
     };
 
-    const handleSave = () => {
+    const handleSave = (index) => {
+        console.log(books.items[index])
+        console.log("INDEX", index)
         API.save({
-            title: books.items?.volumeInfo.title,
-            authors: books.items?.volumeInfo.authors,
-            description: books.items?.volumeInfo.description,
-            image: books.items?.volumeInfo.imageLinks.smallThumbnail,
-            link: books.items?.volumeInfo.infoLink
+            id: books.items[index]?.id,
+            title: books.items[index]?.volumeInfo.title,
+            authors: books.items[index]?.volumeInfo.authors,
+            description: books.items[index]?.volumeInfo.description,
+            image: books.items[index]?.volumeInfo.imageLinks.smallThumbnail,
+            link: books.items[index]?.volumeInfo.infoLink
         })
         .then((res) => console.log(res))
         .catch((err) => console.log(err))
@@ -95,7 +98,7 @@ const Main = () => {
             </Form.Group>
 
             <Container>
-                {books.items?.map((bookData) => {
+                {books.items?.map((bookData, index) => {
                     return (
                         <Row>
                             <Col>
@@ -125,7 +128,7 @@ const Main = () => {
                                                 id="save-button"
                                                 variant="light"
                                                 type="submit"
-                                                onClick={handleSave}
+                                                onClick={() => handleSave(index)}
                                             >Save
             </Button>
                                         </Card.Text>

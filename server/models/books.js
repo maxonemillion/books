@@ -2,14 +2,18 @@ const mongoose = require('mongoose');
 
 const BookSchema = new mongoose.Schema({
     // set up properties for a TODO
+    id: {
+        type: String,
+        required: true
+    },
     title: {
         type: String,
         required: true
     },
-    authors: {
+    authors: [{
         type: String,
         required: true
-    },
+    }],
     description: {
         type: String,
         required: true

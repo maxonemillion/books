@@ -16,7 +16,7 @@ router
       });
   })
   .post((req, res) => {
-    console.log({ reqBody: req.body });
+    console.log({ ...req.body });
 
     Books
       .create({
