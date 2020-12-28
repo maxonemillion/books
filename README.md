@@ -8,7 +8,7 @@ The purpose of this app was to create a React-based Google Books Search app usin
 MongoDB, Express, React, Node
 
 ### RUN:
-[Here](https://fast-crag-66495.herokuapp.com/) is the link to the deployed app.  
+[Here](https://findyourbooks.herokuapp.com/) is the link to the deployed app.  
 
 ### SCREENSHOT:
 
